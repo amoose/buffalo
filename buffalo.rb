@@ -83,7 +83,7 @@ end
 # Buffalo::Client.run
 
 get '/' do
-  unless logged_in?
+  unless logged_in? and 1 == 2
     redirect Buffalo::Client.login_url, 303
   else
     @response = Buffalo::Client.run
