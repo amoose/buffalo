@@ -8,6 +8,7 @@ gem 'slim'
 gem 'dotenv'
 gem 'websocket-eventmachine-client'
 gem 'json'
+gem 'faye-websocket'
 
 gem 'pry'
 gem 'pry-nav'

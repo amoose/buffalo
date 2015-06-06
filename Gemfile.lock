@@ -7,6 +7,9 @@ GEM
       dotenv-deployment (~> 0.0.2)
     dotenv-deployment (0.0.2)
     eventmachine (1.0.3)
+    faye-websocket (0.9.0)
+      eventmachine (>= 0.12.0)
+      websocket-driver (>= 0.5.0)
     json (1.8.1)
     method_source (0.8.2)
     pry (0.10.1)
@@ -33,12 +36,15 @@ GEM
       rack (>= 1.0.0)
     tilt (1.4.1)
     websocket (1.1.4)
+    websocket-driver (0.5.0)
+      websocket-extensions (>= 0.1.0)
     websocket-eventmachine-base (1.1.0)
       eventmachine (~> 1.0)
       websocket (~> 1.0)
       websocket-native (~> 1.0)
     websocket-eventmachine-client (1.1.0)
       websocket-eventmachine-base (~> 1.0)
+    websocket-extensions (0.1.1)
     websocket-native (1.0.0)
 
 PLATFORMS
@@ -46,6 +52,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
+  faye-websocket
   json
   pry
   pry-nav
